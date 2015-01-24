@@ -13,11 +13,9 @@ public class Destructor : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter2D(Collider2D other){
-		if(other.tag == "Player"){
-			GameObject Player = GameObject.Find("Player");
-			Player.SetActive(false);
-		}else{
+	void OnTriggerEnter(BoxCollider other){
+		if(other.tag == "Objetos"){
+			GameObject Objetos = GameObject.Find("Objetos");
 			Destroy(other.gameObject);
 		} 
 	}
