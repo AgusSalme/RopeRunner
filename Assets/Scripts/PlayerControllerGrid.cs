@@ -21,10 +21,16 @@ public class PlayerControllerGrid : MonoBehaviour {
 		
 		if(moving && ValidateMovement()) {
 			// pos is changed when there's input from the player
+			CheckBounds();
 			transform.position = pos;
 			moving = false;
 		}
 	}
+	private void CheckBounds(){
+		if(pos.x > GameManager.gamemanager.levelEnd)pos.x = GameManager.gamemanager.levelEnd;
+		if(pos.x < GameManager.gamemanager.levelBegin)pos.x = GameManager.gamemanager.levelBegin;
+	}
+
 	private bool ValidateMovement(){
 		float dif = pos.x - otherPlayer.transform.position.x;
 		//Use gameManager para separacion de 
@@ -41,7 +47,7 @@ public class PlayerControllerGrid : MonoBehaviour {
 			return true;
 		}
 
-		else if (Mathf.Abs(dif) > 14 ) {
+		else if (Mathf.Abs(dif) > GameManager.gamemanager.ropeLenght) {
 			pos = transform.position;
 			return false;
 
