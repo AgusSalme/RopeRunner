@@ -119,6 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f296bdb65f72e04f84938d1b5d07553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pos: {x: 0, y: 0}
+  moving: 0
   otherPlayer: {fileID: 1070716358}
   playerId: 1
 --- !u!59 &11534016
@@ -1376,6 +1378,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f296bdb65f72e04f84938d1b5d07553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pos: {x: 0, y: 0}
+  moving: 0
   otherPlayer: {fileID: 11534015}
   playerId: 2
 --- !u!54 &1070716359
