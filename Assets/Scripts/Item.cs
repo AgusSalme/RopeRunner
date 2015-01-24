@@ -13,7 +13,7 @@ public class Item : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		this.transform.Translate(Vector3.back * velocidadDespzamiento);
+		this.transform.Translate(Vector3.down * velocidadDespzamiento);
 	}
 
 	void OnTriggerEnter(Collider other) {

@@ -19,10 +19,13 @@ public class GeneradorObstaculos : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timeForNextGeneration -= Time.deltaTime;
+
 		if (timeForNextGeneration <= 0) {
 			Vector3 position = transform.position;
 			position.x = Random.Range (xMin, xMax);
-			Instantiate (obj [Random.Range (0, obj.Length)], position, Quaternion.identity);
+			GameObject objeto = obj [Random.Range (0, obj.Length)];
+			objeto = (GameObject)Instantiate(objeto);
+			objeto.transform.position = position;
 			timeForNextGeneration = Random.Range(tiempoMin, tiempoMax);
 		}
 		//Invoke("Generar", Random.Range(tiempoMin, tiempoMax));
