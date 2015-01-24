@@ -4,7 +4,8 @@ using System.Collections;
 public class LoseScene : MonoBehaviour {
 
 	public string mainGameSceneName = "Game";
-	public Font font;
+	public GUISkin buttonSkin = null;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -16,10 +17,8 @@ public class LoseScene : MonoBehaviour {
 	}
 
 	public void OnGUI(){
-		GUIStyle buttonStyle = new GUIStyle ("Button");
-		buttonStyle.font = font;
 		Rect buttonRect = new Rect(Screen.width / 2 - 50 ,Screen.height * 3 / 4 - 25,100,50);
-		if(GUI.Button(buttonRect, "Restart", buttonStyle)){
+		if(GUI.Button(buttonRect, "Restart", buttonSkin)){
 			Application.LoadLevel("Game");
 		}
 	}
