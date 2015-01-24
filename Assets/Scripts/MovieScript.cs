@@ -5,7 +5,6 @@ public class MovieScript : MonoBehaviour {
 
 	// Use this for initialization
 
-	public MovieTexture movTexture;
 
 	void Start() {
 		((MovieTexture)renderer.material.mainTexture).Play();
