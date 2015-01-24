@@ -320,8 +320,8 @@ MonoBehaviour:
   - {fileID: 100000, guid: 090f04d132da3a54f8d294f906e38388, type: 2}
   - {fileID: 100000, guid: 5b997182febaf46499664de415826e53, type: 2}
   - {fileID: 100000, guid: a1ecb894a37c15e4bbf470ceb90a9a07, type: 2}
-  tiempoMin: 5
-  tiempoMax: 10
+  tiempoMin: .600000024
+  tiempoMax: 2
   xMin: -10
   xMax: 43
 --- !u!1 &175933717
