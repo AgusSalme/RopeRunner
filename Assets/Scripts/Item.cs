@@ -5,9 +5,8 @@ public class Item : MonoBehaviour {
 
 	public float velocidadDespzamiento = 0.1f;
 	public string[] collitionTags = {"Player"};
-	public Camera loseCamera;
-	public Camera inGameCamera;
-	
+	public string loseSceneName = "Lose";
+
 	// Use this for initialization
 	void Start () {
 		
@@ -18,13 +17,10 @@ public class Item : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (inGameCamera.enabled){
-			foreach(string collitionTag in collitionTags){
-				if(other.gameObject.tag == collitionTag){
-					loseCamera.enabled = true;
-					inGameCamera.enabled = false;
-					break;
-				}
+		foreach(string collitionTag in collitionTags){
+			if(other.gameObject.tag == collitionTag){
+				Application.LoadLevel(loseSceneName);
+				break;
 			}
 		}
 	}
