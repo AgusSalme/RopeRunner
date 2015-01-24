@@ -3,10 +3,11 @@ using System.Collections;
 
 public class PlayerControllerGrid : MonoBehaviour {
 	
-	private Vector2 pos;
-	private bool moving = false;
-	public MonoBehaviour otherPlayer;
+	public Vector2 pos;
+	public bool moving = false;
+	public PlayerControllerGrid otherPlayer;
 	public int playerId;
+
 	
 	void Start () {
 		// First store our current position when the
@@ -26,10 +27,24 @@ public class PlayerControllerGrid : MonoBehaviour {
 	}
 	private bool ValidateMovement(){
 		float dif = pos.x - otherPlayer.transform.position.x;
-		//Use gameManager
-		if (Mathf.Abs(dif) > 14 || dif == 0) {
-			pos = transform.position;	
+		//Use gameManager para separacion de 
+		if(dif == 0){
+			if(transform.position.x - otherPlayer.transform.position.x <= 0){
+				pos -= Vector2.right*6;
+				otherPlayer.pos += Vector2.right*6;
+				otherPlayer.moving = true;
+			}else{
+				pos += Vector2.right*6;
+				otherPlayer.pos -= Vector2.right*6;
+				otherPlayer.moving = true;
+			}
+			return true;
+		}
+
+		else if (Mathf.Abs(dif) > 14 ) {
+			pos = transform.position;
 			return false;
+
 		}
 		return true;
 	}
