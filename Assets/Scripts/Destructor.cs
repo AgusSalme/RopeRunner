@@ -13,7 +13,7 @@ public class Destructor : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter(BoxCollider other){
+	void OnTriggerEnter(Collider other){
 		if(other.tag == "Objetos"){
 			GameObject Objetos = GameObject.Find("Objetos");
 			Destroy(other.gameObject);
