@@ -26,7 +26,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: pj2animation
-  m_Speed: 2
+  m_Speed: 2.79999995
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 557b46f0243afdb4c9efdc676ebb01a1, type: 2}
