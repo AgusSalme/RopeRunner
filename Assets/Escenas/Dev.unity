@@ -193,6 +193,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &83699278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,8 +206,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj:
-  - {fileID: 100000, guid: 70fcba5d71373de4e8540b7baf935ce0, type: 2}
-  - {fileID: 100000, guid: 7bfa3077048f02e41ac70da4356047eb, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   tiempoMin: 5
   tiempoMax: 10
   xMin: -35
