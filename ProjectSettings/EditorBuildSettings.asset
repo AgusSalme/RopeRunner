@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Escenas/introScene.unity
+    path: Assets/Escenas/Game.unity
   - enabled: 1
-    path: Assets/Escenas/RopeWorking.unity
+    path: Assets/Escenas/Lose.unity

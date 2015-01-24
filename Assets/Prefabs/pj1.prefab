@@ -16,7 +16,7 @@ GameObject:
   - 59: {fileID: 5900000}
   m_Layer: 0
   m_Name: pj1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
