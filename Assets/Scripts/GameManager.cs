@@ -1,18 +1,28 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class GameManager : MonoBehaviour {
+
+	public static GameManager gamemanager;
 	
-	public GameObject player;
-	private GameCamera cam;
-	
+	void Awake (){
+				if (gamemanager == null) {
+						gamemanager = this;
+						DontDestroyOnLoad (gameObject);
+				} else if (gamemanager != this) {
+						Destroy (gameObject);
+				}
+		}
+
+
+
+	// Use this for initialization
 	void Start () {
-		cam = GetComponent<GameCamera>();
-		SpawnPlayer();
+	
 	}
 	
-	// Spawn player
-	private void SpawnPlayer() {
-		cam.SetTarget((Instantiate(player,Vector3.zero,Quaternion.identity) as GameObject).transform);
+	// Update is called once per frame
+	void Update () {
+	
 	}
 }

@@ -1,4 +1,8 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e192f7329e2fc5c46b2a0bf57dd6d4d1
+=======
+guid: bc61bbe526ed61844b520774c9cad378
+>>>>>>> Agregado de GameManager y Generador de Obstaculos
 NativeFormatImporter:
   userData: 
