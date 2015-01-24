@@ -29,14 +29,14 @@ public class PlayerController : MonoBehaviour {
 		}
 		
 		// If player is touching the ground
-		if (playerPhysics.grounded) {
+		/*if (playerPhysics.grounded) {
 			amountToMove.y = 0;
 			
 			// Jump
 			if (Input.GetButtonDown("Jump")) {
 				amountToMove.y = jumpHeight;	
 			}
-		}
+		}*/
 		
 		// Input
 		targetSpeed = Input.GetAxisRaw("Horizontal") * speed;
