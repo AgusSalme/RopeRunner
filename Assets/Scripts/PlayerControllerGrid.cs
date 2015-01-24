@@ -33,7 +33,7 @@ public class PlayerControllerGrid : MonoBehaviour {
 
 	private bool ValidateMovement(){
 		float dif = pos.x - otherPlayer.transform.position.x;
-		//Use gameManager para separacion de 
+
 		if(dif == 0){
 			if(transform.position.x - otherPlayer.transform.position.x <= 0){
 				pos -= Vector2.right*6;
@@ -50,7 +50,6 @@ public class PlayerControllerGrid : MonoBehaviour {
 		else if (Mathf.Abs(dif) > GameManager.gamemanager.ropeLenght) {
 			pos = transform.position;
 			return false;
-
 		}
 		return true;
 	}
