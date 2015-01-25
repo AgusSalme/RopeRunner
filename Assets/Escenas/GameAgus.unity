@@ -338,6 +338,7 @@ MonoBehaviour:
   tiempoMax: 2
   xMin: -10
   xMax: 53
+  y: 10
 --- !u!1 &102495778
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +401,7 @@ MonoBehaviour:
   tiempoMax: 3
   xMin: -10
   xMax: 53
+  y: 10
 --- !u!1 &175933717
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +610,7 @@ GameObject:
   - 4: {fileID: 268603939}
   - 114: {fileID: 268603938}
   - 114: {fileID: 268603937}
+  - 114: {fileID: 268603940}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -630,6 +633,7 @@ MonoBehaviour:
   ropeLenght: 14
   levelBegin: 0
   levelEnd: 53
+  loseSceneName: Lose
 --- !u!114 &268603938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,6 +658,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!114 &268603940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 268603936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81130787f395c849a797a313e8c9e95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntosGanados: 1
+  puntuacion: 0
+  marcador: {fileID: 1113780399}
+  marcador2: {fileID: 0}
 --- !u!1 &373352401
 GameObject:
   m_ObjectHideFlags: 0
@@ -2109,7 +2128,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1113780398}
-  m_Text: 1234
+  m_Text: 0
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -2119,7 +2138,7 @@ TextMesh:
   m_FontSize: 0
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 748cf7b7ecbb62441a4d6c5967535df5, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -2135,7 +2154,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 748cf7b7ecbb62441a4d6c5967535df5, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2150,8 +2169,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1113780398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.0037041, y: 13.304985, z: 1.66159105}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 22.0037041, y: 12.896513, z: 1.66159117}
+  m_LocalScale: {x: .35767135, y: .373886406, z: 1}
   m_Children: []
   m_Father: {fileID: 1172508210}
   m_RootOrder: 1
@@ -3547,6 +3566,7 @@ MonoBehaviour:
   tiempoMax: 5
   xMin: -10
   xMax: 53
+  y: 10
 --- !u!1 &2065942218
 GameObject:
   m_ObjectHideFlags: 0
