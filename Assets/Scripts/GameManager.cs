@@ -21,7 +21,10 @@ public class GameManager : MonoBehaviour {
 				Destroy (gameObject);
 		}
 	}
-
+	public void StopInvokePoints(){
+		GetComponent<AdministradorPuntos> ().StopInvokePoints ();
+	
+	}
 	// Use this for initialization
 	void Start () {
 		NotificationCenter.DefaultCenter ().AddObserver (this, "PersonajeHaMuerto");

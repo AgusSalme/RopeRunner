@@ -12,9 +12,14 @@ public class AdministradorPuntos : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		NotificationCenter.DefaultCenter().AddObserver(this, "PersonajeHaMuerto");
-		InvokeRepeating ("IncrementarPuntos",0.2f,0.2f);
+		StartInvokingPoints ();
 	// Invoca el metodo "IncrementarPuntos" en 1 segundo y cada 1 segundos
 	
+	}
+	public void StartInvokingPoints () {
+		marcador = GetComponentInChildren<TextMesh> ();
+		InvokeRepeating ("IncrementarPuntos",0.2f,0.2f);
+		// Invoca el metodo "IncrementarPuntos" en 1 segundo y cada 1 segundos
 	}
 
 	void IncrementarPuntos(){
@@ -26,6 +31,9 @@ public class AdministradorPuntos : MonoBehaviour {
 	void ActualizarMarcador(){
 		if(marcador)marcador.text = puntuacion.ToString();
 	}
+	public void StopInvokePoints(){
+		CancelInvoke("IncrementarPuntos");
+	} 
 
 	// Update is called once per frame
 	void Update () {

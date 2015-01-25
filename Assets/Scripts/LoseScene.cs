@@ -8,6 +8,7 @@ public class LoseScene : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		GameManager.gamemanager.StopInvokePoints();
 	
 	}
 	
@@ -19,7 +20,11 @@ public class LoseScene : MonoBehaviour {
 	public void OnGUI(){
 		Rect buttonRect = new Rect(Screen.width / 2 - 50 ,Screen.height * 3 / 4 - 25,100,50);
 		if(GUI.Button(buttonRect, "" ,buttonSkin.button)){
+			AdministradorPuntos adminPuntos = GameManager.gamemanager.GetComponent<AdministradorPuntos>();
+			adminPuntos.puntuacion = 0;
 			Application.LoadLevel("Game");
+			adminPuntos.StartInvokingPoints();
+
 		}
 	}
 }
