@@ -17,8 +17,11 @@ public class MovieScriptDuck : MonoBehaviour {
 		}
 
 		void ChangePlane(){
-			Destroy (this.gameObject);
 			otherPlane.SetActive (true);
+			Invoke("DestroyDuck", 0.1f);
+		}
+		void DestroyDuck(){
+			Destroy (this.gameObject);
 		}
 		
 		// Update is called once per frame
