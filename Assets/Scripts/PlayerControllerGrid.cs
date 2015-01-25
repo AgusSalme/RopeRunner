@@ -58,13 +58,13 @@ public class PlayerControllerGrid : MonoBehaviour {
 		// WASD control
 		// We add the direction to our position,
 		// this moves the character 1 unit (32 pixels)
-		if (Input.GetButtonUp("Player" + playerId + "Right")) {
+		if (Input.GetButton("Player" + playerId + "Right")) {
 			pos += Vector2.right;
 			moving = true;
 		}
 		
 		// For left, we have to subtract the direction
-		else if (Input.GetButtonUp("Player" + playerId + "Left")){
+		else if (Input.GetButton("Player" + playerId + "Left")){
 			pos -= Vector2.right;
 			moving = true;
 		}
