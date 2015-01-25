@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 114: {fileID: 11400000}
   - 136: {fileID: 13600000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: Piedra3
   m_TagString: Objetos
@@ -38,13 +38,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 187f63d0928050446afe53c58510d9c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d49624953369a241a41eb00347e547b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadDespzamiento: .300000012
-  collitionTags:
-  - Player
-  loseSceneName: Lose
+  velocidadDespzamiento: .400000006
+  itemgenerado: 0
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1

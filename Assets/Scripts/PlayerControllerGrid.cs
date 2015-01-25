@@ -7,7 +7,8 @@ public class PlayerControllerGrid : MonoBehaviour {
 	public bool moving = false;
 	public PlayerControllerGrid otherPlayer;
 	public int playerId;
-	
+	Animator anim;
+
 	
 	void Start () {
 		// First store our current position when the
@@ -62,6 +63,7 @@ public class PlayerControllerGrid : MonoBehaviour {
 		//if (Input.GetButtonUp("Player" + playerId + "Right")) {
 			pos += Vector2.right;
 			moving = true;
+		//	anim.SetBool("PersonajeRight" + playerId, true);
 		}
 		
 		// For left, we have to subtract the direction
@@ -69,6 +71,7 @@ public class PlayerControllerGrid : MonoBehaviour {
 		//else if (Input.GetButtonUp("Player" + playerId + "Left")){
 			pos -= Vector2.right;
 			moving = true;
+		//	anim.SetBool("PersonajeLeft" + playerId, true);
 		}
 		
 	}
