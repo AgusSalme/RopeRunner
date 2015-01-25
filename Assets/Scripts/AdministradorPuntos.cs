@@ -24,12 +24,12 @@ public class AdministradorPuntos : MonoBehaviour {
 	}
 
 	void ActualizarMarcador(){
-		marcador.text = puntuacion.ToString();
-		marcador2.text = puntuacion.ToString ();
+		if(marcador)marcador.text = puntuacion.ToString();
 	}
 
 	// Update is called once per frame
 	void Update () {
 	
 	}
+
 }
