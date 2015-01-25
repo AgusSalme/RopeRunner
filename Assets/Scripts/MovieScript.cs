@@ -4,6 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(AudioSource))]
 public class MovieScript : MonoBehaviour {
 
+	public int goToScene = 1;
 	// Use this for initialization
 	void Start()
 	{
@@ -14,7 +15,7 @@ public class MovieScript : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyUp(KeyCode.Space)) {
 			audio.Stop();
-			Application.LoadLevel(1);
+			Application.LoadLevel(goToScene);
 		}
 
 	}
