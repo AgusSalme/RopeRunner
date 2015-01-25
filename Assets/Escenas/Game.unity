@@ -639,7 +639,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400000, guid: 350bd98b9a479fa4ca3cace93e8871fa, type: 2}
       propertyPath: generadores.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 350bd98b9a479fa4ca3cace93e8871fa, type: 2}
       propertyPath: m_LocalPosition.x
@@ -671,7 +671,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 350bd98b9a479fa4ca3cace93e8871fa, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 350bd98b9a479fa4ca3cace93e8871fa, type: 2}
       propertyPath: light1
@@ -701,6 +701,10 @@ Prefab:
       propertyPath: generadorDeZombies
       value: 
       objectReference: {fileID: 809031710}
+    - target: {fileID: 11400000, guid: 350bd98b9a479fa4ca3cace93e8871fa, type: 2}
+      propertyPath: generadores.Array.data[3]
+      value: 
+      objectReference: {fileID: 1759090082}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 350bd98b9a479fa4ca3cace93e8871fa, type: 2}
   m_RootGameObject: {fileID: 700163334}
@@ -736,6 +740,7 @@ Transform:
   - {fileID: 2020715812}
   - {fileID: 1903757169}
   - {fileID: 809031708}
+  - {fileID: 1759090083}
   m_Father: {fileID: 0}
   m_RootOrder: 6
 --- !u!1 &548385491
@@ -854,6 +859,7 @@ MonoBehaviour:
   moving: 0
   otherPlayer: {fileID: 1030682318}
   playerId: 2
+  hit: 0
 --- !u!1 &605175021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,6 +1100,7 @@ MonoBehaviour:
   - {fileID: 83699278}
   - {fileID: 102495781}
   - {fileID: 2020715814}
+  - {fileID: 1759090082}
   generadorDeZombies: {fileID: 809031710}
   zombieTime: 10
 --- !u!4 &700163336
@@ -1561,6 +1568,7 @@ MonoBehaviour:
   moving: 0
   otherPlayer: {fileID: 548385497}
   playerId: 1
+  hit: 0
 --- !u!1 &1081069427
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,7 +2417,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 11c82a184ec6b974087b52d0bf2b1371, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11c82a184ec6b974087b52d0bf2b1371, type: 2}
@@ -2900,6 +2908,70 @@ Transform:
   m_Children: []
   m_Father: {fileID: 25006908}
   m_RootOrder: 0
+--- !u!1 &1759090081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1759090083}
+  - 114: {fileID: 1759090082}
+  - 95: {fileID: 1759090084}
+  m_Layer: 0
+  m_Name: GeneradorTornado
+  m_TagString: Untagged
+  m_Icon: {fileID: 796366903, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1759090082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759090081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f861563837417234e854ea4ba955d731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj:
+  - {fileID: 194216, guid: ef3f54a0cf776bb478c30aeb2261b314, type: 2}
+  - {fileID: 180842, guid: 6ed12b465f0d47045bf4e590c50240fc, type: 2}
+  - {fileID: 195906, guid: 559b8a8ddb97ea349b42d1b82e666e11, type: 2}
+  tiempoMin: 1
+  tiempoMax: 5
+  xMin: -10
+  xMax: 53
+  y: 6
+--- !u!4 &1759090083
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759090081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.95777893, y: -6.60372925, z: 26.4582062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 505865787}
+  m_RootOrder: 5
+--- !u!95 &1759090084
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759090081}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a426ae1593060af46a36ced915501a4f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1759621598
 GameObject:
   m_ObjectHideFlags: 0
