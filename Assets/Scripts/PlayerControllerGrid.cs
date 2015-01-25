@@ -8,24 +8,35 @@ public class PlayerControllerGrid : MonoBehaviour {
 	public PlayerControllerGrid otherPlayer;
 	public int playerId;
 	Animator anim;
+	public bool hit;
 
 	
 	void Start () {
 		// First store our current position when the
 		// script is initialized.
 		pos = transform.position;
+		hit = false;
 	}
 	
 	void Update () {
-
-		CheckInput();
-		
-		if(moving && ValidateMovement()) {
-			// pos is changed when there's input from the player
-			CheckBounds();
-			transform.position = pos;
-			moving = false;
+		if (otherPlayer.hit) {
+			if (moving && ValidateMovement ()) {
+				// pos is changed when there's input from the player
+				CheckBounds ();
+				transform.position = pos;
+				moving = false;
+			}
 		}
+		else if (!hit) {
+			CheckInput ();
+
+			if (moving && ValidateMovement ()) {
+					// pos is changed when there's input from the player
+					CheckBounds ();
+					transform.position = pos;
+					moving = false;
+			}
+		} 
 	}
 	private void CheckBounds(){
 		if(pos.x > GameManager.gamemanager.levelEnd)pos.x = GameManager.gamemanager.levelEnd;
@@ -45,6 +56,8 @@ public class PlayerControllerGrid : MonoBehaviour {
 				otherPlayer.pos -= Vector2.right*multiplier;
 				otherPlayer.moving = true;
 			}
+			hit = true;
+			Invoke("EnableMovement",0.3f);
 			return true;
 		}
 
@@ -53,6 +66,10 @@ public class PlayerControllerGrid : MonoBehaviour {
 			return false;
 		}
 		return true;
+	}
+	private void EnableMovement(){
+		hit = false;
+		otherPlayer.hit = false;
 	}
 	private void CheckInput() {
 		
