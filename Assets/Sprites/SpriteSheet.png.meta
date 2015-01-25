@@ -18,6 +18,12 @@ TextureImporter:
     21300026: SpriteSheet_13
     21300028: SpriteSheet_14
     21300030: SpriteSheet_15
+    21300032: SpriteSheet_16
+    21300034: SpriteSheet_17
+    21300036: SpriteSheet_18
+    21300038: SpriteSheet_19
+    21300040: SpriteSheet_20
+    21300042: SpriteSheet_21
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -216,6 +222,66 @@ TextureImporter:
         y: 575
         width: 208
         height: 201
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 599
+        width: 194
+        height: 191
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 534
+        width: 329
+        height: 305
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 527
+        width: 349
+        height: 318
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 4
+        width: 547
+        height: 530
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 4
+        width: 564
+        height: 551
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 0
+        width: 575
+        height: 537
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

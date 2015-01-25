@@ -34,15 +34,15 @@ public class PlayerControllerGrid : MonoBehaviour {
 
 	private bool ValidateMovement(){
 		float dif = pos.x - otherPlayer.transform.position.x;
-
+		float multiplier = GameManager.gamemanager.ropeLenght / 2;
 		if(dif == 0){
 			if(transform.position.x - otherPlayer.transform.position.x <= 0){
-				pos -= Vector2.right*6;
-				otherPlayer.pos += Vector2.right*6;
+				pos -= Vector2.right*multiplier;
+				otherPlayer.pos += Vector2.right*multiplier;
 				otherPlayer.moving = true;
 			}else{
-				pos += Vector2.right*6;
-				otherPlayer.pos -= Vector2.right*6;
+				pos += Vector2.right*multiplier;
+				otherPlayer.pos -= Vector2.right*multiplier;
 				otherPlayer.moving = true;
 			}
 			return true;
@@ -60,6 +60,7 @@ public class PlayerControllerGrid : MonoBehaviour {
 		// We add the direction to our position,
 		// this moves the character 1 unit (32 pixels)
 		if (Input.GetButton("Player" + playerId + "Right")) {
+		//if (Input.GetButtonUp("Player" + playerId + "Right")) {
 			pos += Vector2.right;
 			moving = true;
 		//	anim.SetBool("PersonajeRight" + playerId, true);
@@ -67,6 +68,7 @@ public class PlayerControllerGrid : MonoBehaviour {
 		
 		// For left, we have to subtract the direction
 		else if (Input.GetButton("Player" + playerId + "Left")){
+		//else if (Input.GetButtonUp("Player" + playerId + "Left")){
 			pos -= Vector2.right;
 			moving = true;
 		//	anim.SetBool("PersonajeLeft" + playerId, true);
