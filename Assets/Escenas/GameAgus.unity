@@ -410,7 +410,7 @@ GameObject:
   - 4: {fileID: 175933718}
   m_Layer: 0
   m_Name: Segment
-  m_TagString: Untagged
+  m_TagString: Rope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -442,7 +442,7 @@ GameObject:
   - 4: {fileID: 239225921}
   m_Layer: 0
   m_Name: Segment
-  m_TagString: Untagged
+  m_TagString: Rope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,6 +630,11 @@ MonoBehaviour:
   ropeLenght: 14
   levelBegin: 0
   levelEnd: 53
+  ropeMaterial: {fileID: 0}
+  light1: {fileID: 0}
+  light2: {fileID: 0}
+  light3: {fileID: 0}
+  zombieTime: 10
 --- !u!114 &268603938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1696,7 +1701,7 @@ GameObject:
   - 4: {fileID: 751169202}
   m_Layer: 0
   m_Name: Segment
-  m_TagString: Untagged
+  m_TagString: Rope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1728,7 +1733,7 @@ GameObject:
   - 4: {fileID: 889069107}
   m_Layer: 0
   m_Name: Rope
-  m_TagString: Untagged
+  m_TagString: Rope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2155,7 +2160,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2f1021abb7cde6f448c6edbaf67bdf82, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 2f1021abb7cde6f448c6edbaf67bdf82, type: 2}
       propertyPath: m_Name
@@ -2382,6 +2387,22 @@ Prefab:
       value: Rope
       objectReference: {fileID: 0}
     - target: {fileID: 100032, guid: e192f7329e2fc5c46b2a0bf57dd6d4d1, type: 2}
+      propertyPath: m_TagString
+      value: Rope
+      objectReference: {fileID: 0}
+    - target: {fileID: 176478, guid: e192f7329e2fc5c46b2a0bf57dd6d4d1, type: 2}
+      propertyPath: m_TagString
+      value: Rope
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: e192f7329e2fc5c46b2a0bf57dd6d4d1, type: 2}
+      propertyPath: m_TagString
+      value: Rope
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: e192f7329e2fc5c46b2a0bf57dd6d4d1, type: 2}
+      propertyPath: m_TagString
+      value: Rope
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: e192f7329e2fc5c46b2a0bf57dd6d4d1, type: 2}
       propertyPath: m_TagString
       value: Rope
       objectReference: {fileID: 0}
@@ -2658,15 +2679,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5900000, guid: 8476e22d8fe63594f91a359354c8153f, type: 2}
       propertyPath: m_ConnectedAnchor.x
-      value: -26.6267815
+      value: -10.6507149
       objectReference: {fileID: 0}
     - target: {fileID: 5900000, guid: 8476e22d8fe63594f91a359354c8153f, type: 2}
       propertyPath: m_ConnectedAnchor.y
-      value: 3.8589282
+      value: 14.8769054
       objectReference: {fileID: 0}
     - target: {fileID: 5900000, guid: 8476e22d8fe63594f91a359354c8153f, type: 2}
       propertyPath: m_ConnectedAnchor.z
-      value: -68.3555679
+      value: -2.46269441
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8476e22d8fe63594f91a359354c8153f, type: 2}
