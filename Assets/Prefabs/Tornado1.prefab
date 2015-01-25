@@ -41,10 +41,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f62769060092b8744a5d6ff468e82807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadDespzamientoVertical: .100000001
+  velocidadDespzamientoVertical: .200000003
   velocidadDespzamientoHorizontal: .200000003
   amplitudDeMovimientoHorizontal: 10
-  velRotacion: 2
+  rpm: 50
   itemgenerado: 0
 --- !u!136 &13615844
 CapsuleCollider:
