@@ -14,7 +14,12 @@ public class Destructor : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		Debug.Log("Destruir");
 		Destroy(other.gameObject);
+		Debug.Log("Destruir");
+	}
+
+	void OnCollisionEnter(Collision other){
+		Destroy(other.gameObject);
+		Debug.Log ("Destruir");
 	}
 }
