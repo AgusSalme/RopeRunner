@@ -11,6 +11,13 @@ TextureImporter:
     21300012: SpriteSheet_6
     21300014: SpriteSheet_7
     21300016: SpriteSheet_8
+    21300018: SpriteSheet_9
+    21300020: SpriteSheet_10
+    21300022: SpriteSheet_11
+    21300024: SpriteSheet_12
+    21300026: SpriteSheet_13
+    21300028: SpriteSheet_14
+    21300030: SpriteSheet_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -139,6 +146,76 @@ TextureImporter:
         y: 1178
         width: 519
         height: 506
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 801
+        width: 350
+        height: 353
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 821
+        width: 374
+        height: 340
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 839
+        width: 339
+        height: 322
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 835
+        width: 339
+        height: 326
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 558
+        width: 194
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 541
+        width: 266
+        height: 260
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 575
+        width: 208
+        height: 201
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

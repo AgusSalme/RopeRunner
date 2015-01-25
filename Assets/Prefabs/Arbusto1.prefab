@@ -41,7 +41,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 187f63d0928050446afe53c58510d9c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadDespzamiento: .100000001
+  velocidadDespzamiento: .400000006
   collitionTags:
   - Player
   - Rope
