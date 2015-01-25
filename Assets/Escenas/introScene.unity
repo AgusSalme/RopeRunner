@@ -203,6 +203,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1602962813
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +235,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: d9f513b5691950d4380064563054ef09, type: 2}
+  - {fileID: 2100000, guid: 5ee47714ea4efeb4c9db5b4b3518bd2d, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -448,6 +449,7 @@ MonoBehaviour:
   ropeLenght: 14
   levelBegin: 0
   levelEnd: 53
+  loseSceneName: Lose
 --- !u!114 &2023282481
 MonoBehaviour:
   m_ObjectHideFlags: 0
