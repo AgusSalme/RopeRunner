@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		InvokeRepeating ("ToggleLight", zombieTime, zombieTime);
 		zombieMode = false;
-	
+		ropeMaterial.color = Color.white;	
 	}
    void ToggleLight(){
 		if (!zombieMode) {
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour {
 			zombieMode = true;
 		} else {
 			RenderSettings.ambientLight = Color.white;
-			ropeMaterial.color = Color.white;
+			ropeMaterial.color = Color.white;	
 			light1.GetComponent<Light>().enabled = false;
 			light2.GetComponent<Light>().enabled = false;
 			light3.GetComponent<Light>().enabled = false;
