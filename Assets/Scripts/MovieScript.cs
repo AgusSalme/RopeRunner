@@ -12,7 +12,7 @@ public class MovieScript : MonoBehaviour {
 	{
 		spacebar = false;
 		((MovieTexture)renderer.material.mainTexture).Play ();
-		Invoke ("EnableSpaceBar", 4);
+		if(spacebartext)Invoke ("EnableSpaceBar", 4);
 
 	}
 
