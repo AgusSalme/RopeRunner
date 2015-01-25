@@ -11,6 +11,7 @@ public class ZombieManager : MonoBehaviour {
 	public Light light2;
 	public Light light3;
 	public GeneradorObstaculos[] generadores;
+	public GeneradorObstaculos generadorDeZombies;
 	
 	public int zombieTime = 10;
 	private List<Light> lights;
@@ -20,8 +21,6 @@ public class ZombieManager : MonoBehaviour {
 		ropeMaterial.color = Color.white;
 		InvokeRepeating ("ToggleLight", zombieTime, zombieTime);
 	}
-
-
 
 	void ToggleLight(){
 		if (!zombieMode) {
@@ -34,6 +33,7 @@ public class ZombieManager : MonoBehaviour {
 			foreach(GeneradorObstaculos generador in generadores){
 				generador.enabled = false;
 			}
+			generadorDeZombies.enabled = true;
 		} else {
 			RenderSettings.ambientLight = Color.white;
 			ropeMaterial.color = Color.white;	
@@ -43,6 +43,7 @@ public class ZombieManager : MonoBehaviour {
 			foreach(GeneradorObstaculos generador in generadores){
 				generador.enabled = true;
 			}
+			generadorDeZombies.enabled = false;
 			zombieMode = false;
 		}
 	}
