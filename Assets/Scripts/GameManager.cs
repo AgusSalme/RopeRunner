@@ -8,6 +8,10 @@ public class GameManager : MonoBehaviour {
 	public int levelEnd;
 	private bool zombieMode;
 	public Material ropeMaterial;
+	public GameObject light1;
+	public GameObject light2;
+	public GameObject light3;
+	public int zombieTime = 10;
 	
 	public static GameManager gamemanager;
 	
@@ -26,7 +30,7 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating ("ToggleLight", 10, 10);
+		InvokeRepeating ("ToggleLight", zombieTime, zombieTime);
 		zombieMode = false;
 	
 	}
@@ -34,10 +38,16 @@ public class GameManager : MonoBehaviour {
 		if (!zombieMode) {
 			RenderSettings.ambientLight = Color.gray;
 			ropeMaterial.color = Color.red;
+			light1.GetComponent<Light>().enabled = true;
+			light2.GetComponent<Light>().enabled = true;
+			light3.GetComponent<Light>().enabled = true;
 			zombieMode = true;
 		} else {
 			RenderSettings.ambientLight = Color.white;
 			ropeMaterial.color = Color.white;
+			light1.GetComponent<Light>().enabled = false;
+			light2.GetComponent<Light>().enabled = false;
+			light3.GetComponent<Light>().enabled = false;
 			zombieMode = false;
 		}
    }
