@@ -669,7 +669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b81130787f395c849a797a313e8c9e95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntosGanados: 1
+  puntosGanados: 5
   puntuacion: 0
   marcador: {fileID: 1113780399}
   marcador2: {fileID: 0}
@@ -1276,6 +1276,7 @@ MonoBehaviour:
   moving: 0
   otherPlayer: {fileID: 1030682318}
   playerId: 2
+  hit: 0
 --- !u!1 &553557403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1970,6 +1971,7 @@ MonoBehaviour:
   moving: 0
   otherPlayer: {fileID: 548385497}
   playerId: 1
+  hit: 0
 --- !u!1 &1035303854
 GameObject:
   m_ObjectHideFlags: 0
