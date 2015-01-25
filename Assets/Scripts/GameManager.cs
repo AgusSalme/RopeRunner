@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour {
 	public int ropeLenght;
 	public int levelBegin;
 	public int levelEnd;
-
+	public string loseSceneName = "Lose";
 	
 	public static GameManager gamemanager;
 	
@@ -24,10 +24,23 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		NotificationCenter.DefaultCenter ().AddObserver (this, "PersonajeHaMuerto");
+		NotificationCenter.DefaultCenter ().AddObserver (this, "SogaCortada");
    }
+
+	void PersonajeHaMuerto(){	
+		GameOver ();
+	}
+
+	void GameOver(){		
+		Application.LoadLevel (loseSceneName);
+	}
+
+	void SogaCortada(){		
+		Invoke ("GameOver", 1);
+	}
 
 	// Update is called once per frame
 	void Update () {
-	
 	}
 }

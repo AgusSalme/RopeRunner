@@ -24,10 +24,7 @@ public class Item2 : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "Player") {
 			NotificationCenter.DefaultCenter ().PostNotification (this, "PersonajeHaMuerto");
-			GameObject Player = GameObject.Find ("Player");
-			Player.SetActive (false);
-		} else {
-			Destroy (other.gameObject);
-		}
+			other.gameObject.SetActive (false);
+		} 
 	}
 }

@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 436498}
   - 212: {fileID: 21236498}
-  - 114: {fileID: 11436498}
+  - 114: {fileID: 11408396}
   m_Layer: 0
   m_Name: 'nube 2 '
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11436498
+--- !u!114 &11408396
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -37,11 +37,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 136498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 187f63d0928050446afe53c58510d9c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 83943c7bdd4739e4faf50f2e1c5c446d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadDespzamiento: .100000001
-  itemgenerado: 1
 --- !u!212 &21236498
 SpriteRenderer:
   m_ObjectHideFlags: 1

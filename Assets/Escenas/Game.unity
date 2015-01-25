@@ -346,7 +346,7 @@ GameObject:
   - 4: {fileID: 175933718}
   m_Layer: 0
   m_Name: Segment
-  m_TagString: Untagged
+  m_TagString: Rope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -378,7 +378,7 @@ GameObject:
   - 4: {fileID: 239225921}
   m_Layer: 0
   m_Name: Segment
-  m_TagString: Untagged
+  m_TagString: Rope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -567,6 +567,7 @@ MonoBehaviour:
   ropeLenght: 14
   levelBegin: 0
   levelEnd: 53
+  loseSceneName: Lose
 --- !u!114 &268603938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1657,7 +1658,7 @@ GameObject:
   - 4: {fileID: 751169202}
   m_Layer: 0
   m_Name: Segment
-  m_TagString: Untagged
+  m_TagString: Rope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1689,7 +1690,7 @@ GameObject:
   - 4: {fileID: 889069107}
   m_Layer: 0
   m_Name: Rope
-  m_TagString: Untagged
+  m_TagString: Rope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2344,6 +2345,22 @@ Prefab:
       value: Rope
       objectReference: {fileID: 0}
     - target: {fileID: 100032, guid: e192f7329e2fc5c46b2a0bf57dd6d4d1, type: 2}
+      propertyPath: m_TagString
+      value: Rope
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: e192f7329e2fc5c46b2a0bf57dd6d4d1, type: 2}
+      propertyPath: m_TagString
+      value: Rope
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: e192f7329e2fc5c46b2a0bf57dd6d4d1, type: 2}
+      propertyPath: m_TagString
+      value: Rope
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: e192f7329e2fc5c46b2a0bf57dd6d4d1, type: 2}
+      propertyPath: m_TagString
+      value: Rope
+      objectReference: {fileID: 0}
+    - target: {fileID: 176478, guid: e192f7329e2fc5c46b2a0bf57dd6d4d1, type: 2}
       propertyPath: m_TagString
       value: Rope
       objectReference: {fileID: 0}

@@ -22,12 +22,14 @@ public class ItemArbol : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider other) {
-		if (other.tag == "Rope") {
+		Debug.Log("Entro en On trigger enter en itemArbol. Tag: "+other.gameObject.tag);
+		if (other.gameObject.tag == "Rope") {
 			NotificationCenter.DefaultCenter ().PostNotification (this, "SogaCortada");
-			GameObject Player = GameObject.Find ("Rope");
-			Player.SetActive (false);
-		} else {
-			Destroy (other.gameObject);
+			other.gameObject.SetActive (false);
 		}
+		else if (other.gameObject.tag == "Player") {
+			NotificationCenter.DefaultCenter ().PostNotification (this, "PersonajeHaMuerto");
+			other.gameObject.SetActive (false);
+		} 
 	}
 }
