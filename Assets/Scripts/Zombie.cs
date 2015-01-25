@@ -1,12 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Zombie : MonoBehaviour {
 
 	public float velocidadDespzamiento = 0.1f;
 	public bool itemgenerado = false;
+	private Animator anim;
+	public AudioSource audioMatar;
+
 
 	void Start(){
+		anim = GetComponent<Animator> ();
 	}
 
 	void FixedUpdate () {
@@ -25,7 +30,8 @@ public class Zombie : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Rope") {
-			//TODO Rebanar Zombie
+			anim.SetBool("isDead", true);
+			audioMatar.Play();
 		}
 		else if (other.gameObject.tag == "Player") {
 			NotificationCenter.DefaultCenter ().PostNotification (this, "PersonajeHaMuerto");
