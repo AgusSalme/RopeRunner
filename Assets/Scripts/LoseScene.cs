@@ -18,7 +18,7 @@ public class LoseScene : MonoBehaviour {
 
 	public void OnGUI(){
 		Rect buttonRect = new Rect(Screen.width / 2 - 50 ,Screen.height * 3 / 4 - 25,100,50);
-		if(GUI.Button(buttonRect, "Restart", buttonSkin)){
+		if(GUI.Button(buttonRect, "Restart", buttonSkin.button)){
 			Application.LoadLevel("Game");
 		}
 	}
