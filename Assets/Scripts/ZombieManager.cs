@@ -10,7 +10,7 @@ public class ZombieManager : MonoBehaviour {
 	public Light light1;
 	public Light light2;
 	public Light light3;
-	public GeneradorObstaculos generador;
+	public GeneradorObstaculos[] generadores;
 	
 	public int zombieTime = 10;
 	private List<Light> lights;
@@ -31,14 +31,18 @@ public class ZombieManager : MonoBehaviour {
 			light2.enabled = true;
 			light3.enabled = true;
 			zombieMode = true;
-			generador.enabled = false;
+			foreach(GeneradorObstaculos generador in generadores){
+				generador.enabled = false;
+			}
 		} else {
 			RenderSettings.ambientLight = Color.white;
 			ropeMaterial.color = Color.white;	
 			light1.enabled = false;
 			light2.enabled = false;
 			light3.enabled = false;
-			generador.enabled = true;
+			foreach(GeneradorObstaculos generador in generadores){
+				generador.enabled = true;
+			}
 			zombieMode = false;
 		}
 	}
