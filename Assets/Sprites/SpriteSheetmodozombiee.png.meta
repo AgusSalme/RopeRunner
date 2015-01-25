@@ -9,6 +9,7 @@ TextureImporter:
     21300008: SpriteSheetmodozombiee_4
     21300010: SpriteSheetmodozombiee_5
     21300012: SpriteSheetmodozombiee_6
+    21300014: SpriteSheetmodozombiee_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -117,6 +118,16 @@ TextureImporter:
         y: 604
         width: 210
         height: 194
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpriteSheetmodozombiee_7
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 835
+        width: 196
+        height: 175
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
