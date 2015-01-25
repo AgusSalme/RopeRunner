@@ -31,6 +31,7 @@ public class Zombie : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Rope") {
 			anim.SetBool("isDead", true);
+			GameManager.gamemanager.GetComponent<AdministradorPuntos>().puntuacion += 50;
 			audioMatar.Play();
 		}
 		else if (other.gameObject.tag == "Player") {
